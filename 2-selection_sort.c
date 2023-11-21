@@ -10,7 +10,8 @@ void selection_sort(int *array, size_t size)
 	size_t i, j, temp, init_pos;
 
 	if (!array || size < 2)
-	
+		return;
+
 	for (i = 0; i < size - 1; i++)
 	{
 		init_pos = i;
@@ -26,7 +27,5 @@ void selection_sort(int *array, size_t size)
 			array[init_pos] = temp;
 			print_array(array, size);
 		}
-		
 	}
-	
 }
